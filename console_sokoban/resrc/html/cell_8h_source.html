@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>倉庫番: C:/PG/make_game/console_sokoban/console_sokoban/src/cell.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">倉庫番
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cell.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cell_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_cell.html">    9</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;<span class="keyword">class </span><a class="code" href="class_cell.html">Cell</a>{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_cell.html#a73a01f0371f30144269bad4ddd4a60e2">   16</a></span>&#160;    <a class="code" href="class_cell.html#a73a01f0371f30144269bad4ddd4a60e2">Cell</a>()</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        : width_(0), height_(0){</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        array_.resize(width_ * height_);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_cell.html#aff8d39e78fbe15834fec22cb0e1ab8f3">   25</a></span>&#160;    <a class="code" href="class_cell.html#aff8d39e78fbe15834fec22cb0e1ab8f3">Cell</a>(<span class="keywordtype">int</span> arg_width, <span class="keywordtype">int</span> arg_height) </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        : width_(arg_width), height_(arg_height){</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        array_.resize(width_ * height_);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_cell.html#a3416acd775d0a31adb42ffd299c473f1">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_cell.html#a3416acd775d0a31adb42ffd299c473f1">Add</a>(<span class="keywordtype">int</span> x_pos, <span class="keywordtype">int</span> y_pos, T data) {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> ((x_pos + y_pos * width_) &lt; static_cast&lt;int&gt;(array_.size())) {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            array_.at(x_pos + y_pos * width_) = data;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        array_.at(x_pos + y_pos * width_) = data;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_cell.html#aea581b853efbf88005a4d232d01fa529">   48</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_cell.html#aea581b853efbf88005a4d232d01fa529">Add</a>(<span class="keywordtype">int</span> pos, T data) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (pos &lt; static_cast&lt;int&gt;(array_.size())) {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            array_.at(pos) = data;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_cell.html#a5ada8ec3785d23bee50844e2b395d81a">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a5ada8ec3785d23bee50844e2b395d81a">GetWidth</a>() {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> width_;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_cell.html#a131600a2bbd442cbf57e78388ec56bd2">   66</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a131600a2bbd442cbf57e78388ec56bd2">GetHeight</a>() {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> height_;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_cell.html#ae81e9d28f3a57068c6e6c8eed7afde91">   75</a></span>&#160;    <span class="keyword">const</span> T <a class="code" href="class_cell.html#ae81e9d28f3a57068c6e6c8eed7afde91">operator()</a>(<span class="keywordtype">int</span> x_pos, <span class="keywordtype">int</span> y_pos)<span class="keyword"> const</span>{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> array_.at(x_pos + y_pos * width_);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_cell.html#adf209cb052373340f34dec9ae8cd66ac">   84</a></span>&#160;    T <a class="code" href="class_cell.html#adf209cb052373340f34dec9ae8cd66ac">operator()</a>(<span class="keywordtype">int</span> x_pos, <span class="keywordtype">int</span> y_pos) {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> array_.at(x_pos + y_pos * width_);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::vector&lt;T&gt; array_; </div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> width_; </div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> height_; </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div><div class="ttc" id="class_cell_html_a73a01f0371f30144269bad4ddd4a60e2"><div class="ttname"><a href="class_cell.html#a73a01f0371f30144269bad4ddd4a60e2">Cell::Cell</a></div><div class="ttdeci">Cell()</div><div class="ttdoc">デフォルトコンストラクタ</div><div class="ttdef"><b>Definition:</b> cell.h:16</div></div>
+<div class="ttc" id="class_cell_html_ae81e9d28f3a57068c6e6c8eed7afde91"><div class="ttname"><a href="class_cell.html#ae81e9d28f3a57068c6e6c8eed7afde91">Cell::operator()</a></div><div class="ttdeci">const T operator()(int x_pos, int y_pos) const</div><div class="ttdoc">扱いやすいように演算子のオーバーロードを作成</div><div class="ttdef"><b>Definition:</b> cell.h:75</div></div>
+<div class="ttc" id="class_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdef"><b>Definition:</b> cell.h:9</div></div>
+<div class="ttc" id="class_cell_html_aff8d39e78fbe15834fec22cb0e1ab8f3"><div class="ttname"><a href="class_cell.html#aff8d39e78fbe15834fec22cb0e1ab8f3">Cell::Cell</a></div><div class="ttdeci">Cell(int arg_width, int arg_height)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> cell.h:25</div></div>
+<div class="ttc" id="class_cell_html_aea581b853efbf88005a4d232d01fa529"><div class="ttname"><a href="class_cell.html#aea581b853efbf88005a4d232d01fa529">Cell::Add</a></div><div class="ttdeci">bool Add(int pos, T data)</div><div class="ttdoc">データを更新する</div><div class="ttdef"><b>Definition:</b> cell.h:48</div></div>
+<div class="ttc" id="class_cell_html_adf209cb052373340f34dec9ae8cd66ac"><div class="ttname"><a href="class_cell.html#adf209cb052373340f34dec9ae8cd66ac">Cell::operator()</a></div><div class="ttdeci">T operator()(int x_pos, int y_pos)</div><div class="ttdoc">扱いやすいように演算子のオーバーロードを作成</div><div class="ttdef"><b>Definition:</b> cell.h:84</div></div>
+<div class="ttc" id="class_cell_html_a3416acd775d0a31adb42ffd299c473f1"><div class="ttname"><a href="class_cell.html#a3416acd775d0a31adb42ffd299c473f1">Cell::Add</a></div><div class="ttdeci">bool Add(int x_pos, int y_pos, T data)</div><div class="ttdoc">データを更新する</div><div class="ttdef"><b>Definition:</b> cell.h:35</div></div>
+<div class="ttc" id="class_cell_html_a5ada8ec3785d23bee50844e2b395d81a"><div class="ttname"><a href="class_cell.html#a5ada8ec3785d23bee50844e2b395d81a">Cell::GetWidth</a></div><div class="ttdeci">int GetWidth()</div><div class="ttdoc">横幅の取得</div><div class="ttdef"><b>Definition:</b> cell.h:59</div></div>
+<div class="ttc" id="class_cell_html_a131600a2bbd442cbf57e78388ec56bd2"><div class="ttname"><a href="class_cell.html#a131600a2bbd442cbf57e78388ec56bd2">Cell::GetHeight</a></div><div class="ttdeci">int GetHeight()</div><div class="ttdoc">縦幅の取得</div><div class="ttdef"><b>Definition:</b> cell.h:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

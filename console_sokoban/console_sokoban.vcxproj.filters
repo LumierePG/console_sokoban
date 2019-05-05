@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{267dfa11-219d-44bd-89d1-183b6bd24bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resrc">
+      <UniqueIdentifier>{e37b8727-c0e1-49c1-8e10-c6e4312517a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="git">
+      <UniqueIdentifier>{f87c2fc0-e279-458c-bb46-6dcb1ac70dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="map">
+      <UniqueIdentifier>{283b7bc0-fcb6-404a-8628-3b5b1582c120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\seq">
+      <UniqueIdentifier>{3c5e7f25-8c0b-459c-a616-e39d284ad38c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resrc\history.md">
+      <Filter>resrc</Filter>
+    </None>
+    <None Include="resrc\license.md">
+      <Filter>resrc</Filter>
+    </None>
+    <None Include="resrc\readme.md">
+      <Filter>resrc</Filter>
+    </None>
+    <None Include="resrc\.gitignore">
+      <Filter>git</Filter>
+    </None>
+    <None Include="resrc\Doxyfile">
+      <Filter>resrc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sokoban.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\key_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seq\parent.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frame_work.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\file_manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cell.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sokoban.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\key_manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seq\parent.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\frame_work.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="map\maplist.txt">
+      <Filter>map</Filter>
+    </Text>
+    <Text Include="map\map002.txt">
+      <Filter>map</Filter>
+    </Text>
+    <Text Include="map\map001.txt">
+      <Filter>map</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

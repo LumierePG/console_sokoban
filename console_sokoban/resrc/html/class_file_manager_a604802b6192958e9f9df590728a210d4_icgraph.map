@@ -1,0 +1,4 @@
+<map id="FileManager::GetInstance" name="FileManager::GetInstance">
+<area shape="rect" id="node1" title="処理の終わりに呼ぶ" alt="" coords="135,5,305,32"/>
+<area shape="rect" id="node2" href="$class_stage.html#a6e1a9cb7b60e61dee19aca759ef6b48b" title="デストラクタ" alt="" coords="5,5,87,32"/>
+</map>
