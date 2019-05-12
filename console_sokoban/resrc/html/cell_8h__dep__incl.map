@@ -1,5 +1,4 @@
 <map id="C:/PG/make_game/console_sokoban/console_sokoban/src/cell.h" name="C:/PG/make_game/console_sokoban/console_sokoban/src/cell.h">
-<area shape="rect" id="node1" title="配列を扱うクラス" alt="" coords="5,5,188,61"/>
+<area shape="rect" id="node1" title="セルクラスの記述 &quot;src/cell.h&quot;" alt="" coords="5,5,188,61"/>
 <area shape="rect" id="node2" href="$stage_8h.html" title="ステージを扱うクラス" alt="" coords="5,109,188,165"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="ファイルマネージャークラスの記述" alt="" coords="5,213,188,269"/>
 </map>

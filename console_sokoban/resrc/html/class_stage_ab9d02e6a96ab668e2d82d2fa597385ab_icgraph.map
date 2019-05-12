@@ -1,0 +1,5 @@
+<map id="Stage::CheckOutOfRange" name="Stage::CheckOutOfRange">
+<area shape="rect" id="node1" title="移動先が範囲外かチェックする" alt="" coords="397,5,569,32"/>
+<area shape="rect" id="node2" href="$class_sokoban.html#a56bd39b27518c05afc3dcf7ad05f0e64" title="更新" alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node3" href="$class_stage.html#a31e599b2fd9c37114e858964cb5c1d0d" title="移動先が移動可能かのチェックする" alt="" coords="176,31,349,57"/>
+</map>

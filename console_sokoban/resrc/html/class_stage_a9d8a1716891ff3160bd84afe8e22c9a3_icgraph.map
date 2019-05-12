@@ -1,0 +1,4 @@
+<map id="Stage::Draw" name="Stage::Draw">
+<area shape="rect" id="node1" title="ステージの描画" alt="" coords="164,5,257,32"/>
+<area shape="rect" id="node2" href="$class_sokoban.html#a169b094e34131482229255f25e11cac4" title="描画" alt="" coords="5,5,116,32"/>
+</map>

@@ -73,10 +73,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a87457bf38052503b26a92b74a6c4d7a1"><td class="memItemLeft" align="right" valign="top">std::ifstream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_manager.html#a87457bf38052503b26a92b74a6c4d7a1">ReadFile</a> (std::string file_name)</td></tr>
-<tr class="memdesc:a87457bf38052503b26a92b74a6c4d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルマネージャークラスにアクセスする唯一の関数  <a href="#a87457bf38052503b26a92b74a6c4d7a1">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a87457bf38052503b26a92b74a6c4d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルを読み込む  <a href="#a87457bf38052503b26a92b74a6c4d7a1">[詳解]</a><br /></td></tr>
 <tr class="separator:a87457bf38052503b26a92b74a6c4d7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0abf3d546f923ebeb2f5677e3c8b8afc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_manager.html#a0abf3d546f923ebeb2f5677e3c8b8afc">CloseFile</a> (std::ifstream *file_name)</td></tr>
-<tr class="memdesc:a0abf3d546f923ebeb2f5677e3c8b8afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルを読み込む  <a href="#a0abf3d546f923ebeb2f5677e3c8b8afc">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a0abf3d546f923ebeb2f5677e3c8b8afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadFIleを読んだ後必ず呼ぶ事  <a href="#a0abf3d546f923ebeb2f5677e3c8b8afc">[詳解]</a><br /></td></tr>
 <tr class="separator:a0abf3d546f923ebeb2f5677e3c8b8afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -85,11 +85,12 @@ $(function() {
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_manager.html#a1441503c1d975cd11c1538f0e4147eb4">Create</a> ()</td></tr>
 <tr class="memdesc:a1441503c1d975cd11c1538f0e4147eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理の始まりに呼ぶ <br /></td></tr>
 <tr class="separator:a1441503c1d975cd11c1538f0e4147eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7a00ec6be91d85ff47442a7050f7bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_manager.html#a3e7a00ec6be91d85ff47442a7050f7bb">Destory</a> ()</td></tr>
-<tr class="memdesc:a3e7a00ec6be91d85ff47442a7050f7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理の始まりに呼ぶ  <a href="#a3e7a00ec6be91d85ff47442a7050f7bb">[詳解]</a><br /></td></tr>
+<tr class="memitem:a3e7a00ec6be91d85ff47442a7050f7bb"><td class="memItemLeft" align="right" valign="top"><a id="a3e7a00ec6be91d85ff47442a7050f7bb"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_manager.html#a3e7a00ec6be91d85ff47442a7050f7bb">Destory</a> ()</td></tr>
+<tr class="memdesc:a3e7a00ec6be91d85ff47442a7050f7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理の終わりに呼ぶ <br /></td></tr>
 <tr class="separator:a3e7a00ec6be91d85ff47442a7050f7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a604802b6192958e9f9df590728a210d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_file_manager.html">FileManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_manager.html#a604802b6192958e9f9df590728a210d4">GetInstance</a> ()</td></tr>
-<tr class="memdesc:a604802b6192958e9f9df590728a210d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理の終わりに呼ぶ  <a href="#a604802b6192958e9f9df590728a210d4">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a604802b6192958e9f9df590728a210d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルマネージャークラスにアクセスする唯一の関数  <a href="#a604802b6192958e9f9df590728a210d4">[詳解]</a><br /></td></tr>
 <tr class="separator:a604802b6192958e9f9df590728a210d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">関数詳解</h2>
@@ -109,7 +110,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>ファイルを読み込む </p>
+<p>ReadFIleを読んだ後必ず呼ぶ事 </p>
 <p>読み込んで作業をしたら必ず呼ぶ</p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
@@ -117,35 +118,16 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </table>
   </dd>
 </dl>
-<p>ReadFileを読んだ後処理が終わったら必ず呼ぶnewしたデータを削除するため </p>
-
+<p>newしたデータを削除するため、ReadFileを読んだ後、処理が終わったら必ず呼ぶ。 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_file_manager_a0abf3d546f923ebeb2f5677e3c8b8afc_icgraph.png" border="0" usemap="#class_file_manager_a0abf3d546f923ebeb2f5677e3c8b8afc_icgraph" alt=""/></div>
+<map name="class_file_manager_a0abf3d546f923ebeb2f5677e3c8b8afc_icgraph" id="class_file_manager_a0abf3d546f923ebeb2f5677e3c8b8afc_icgraph">
+<area shape="rect"  title="ReadFIleãèª­ãã å¾å¿ãå¼ã¶äº" alt="" coords="152,5,307,32"/>
+<area shape="rect"  href="class_sokoban.html#ab0dc8441b4df5a1de184f42425d1dcd4" title="åæåå¦ç" alt="" coords="5,5,104,32"/>
+</map>
 </div>
-</div>
-<a id="a3e7a00ec6be91d85ff47442a7050f7bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e7a00ec6be91d85ff47442a7050f7bb">&#9670;&nbsp;</a></span>Destory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FileManager::Destory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>処理の始まりに呼ぶ </p>
-<p>処理の終わりに呼ぶ </p>
 
 </div>
 </div>
@@ -172,7 +154,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 
-<p>処理の終わりに呼ぶ </p>
+<p>ファイルマネージャークラスにアクセスする唯一の関数 </p>
 <p>インスタンスの呼び出し</p>
 <dl class="section return"><dt>戻り値</dt><dd>呼び出しインスタンスを返す </dd></dl>
 <div class="dynheader">
@@ -180,8 +162,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div class="dyncontent">
 <div class="center"><img src="class_file_manager_a604802b6192958e9f9df590728a210d4_icgraph.png" border="0" usemap="#class_file_manager_a604802b6192958e9f9df590728a210d4_icgraph" alt=""/></div>
 <map name="class_file_manager_a604802b6192958e9f9df590728a210d4_icgraph" id="class_file_manager_a604802b6192958e9f9df590728a210d4_icgraph">
-<area shape="rect"  title="å¦çã®çµããã«å¼ã¶" alt="" coords="135,5,305,32"/>
-<area shape="rect"  href="class_stage.html#a6e1a9cb7b60e61dee19aca759ef6b48b" title="ãã¹ãã©ã¯ã¿" alt="" coords="5,5,87,32"/>
+<area shape="rect"  title="ãã¡ã¤ã«ããã¼ã¸ã£ã¼ã¯ã©ã¹ã«ã¢ã¯ã»ã¹ããå¯ä¸ã®é¢æ°" alt="" coords="152,31,323,57"/>
+<area shape="rect"  href="class_sokoban.html#ab0dc8441b4df5a1de184f42425d1dcd4" title="åæåå¦ç" alt="" coords="5,5,104,32"/>
+<area shape="rect"  href="class_stage.html#a49d1ffee4af5dd9d9e0e1dfed874a789" title="ã³ã³ã¹ãã©ã¯ã¿" alt="" coords="5,56,104,83"/>
 </map>
 </div>
 
@@ -203,17 +186,23 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>ファイルマネージャークラスにアクセスする唯一の関数 </p>
+<p>ファイルを読み込む </p>
 <p>ファイル読み込み</p>
-<dl class="section return"><dt>戻り値</dt><dd>newしたファイルポインタを返す</dd></dl>
-<p>newした後は呼んだ先で処理する </p>
+<p>newした後は呼んだ先で処理する </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>ファイル名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>newしたファイルポインタを返す </dd></dl>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_file_manager_a87457bf38052503b26a92b74a6c4d7a1_icgraph.png" border="0" usemap="#class_file_manager_a87457bf38052503b26a92b74a6c4d7a1_icgraph" alt=""/></div>
 <map name="class_file_manager_a87457bf38052503b26a92b74a6c4d7a1_icgraph" id="class_file_manager_a87457bf38052503b26a92b74a6c4d7a1_icgraph">
-<area shape="rect"  title="ãã¡ã¤ã«ããã¼ã¸ã£ã¼ã¯ã©ã¹ã«ã¢ã¯ã»ã¹ããå¯ä¸ã®é¢æ°" alt="" coords="135,5,287,32"/>
-<area shape="rect"  href="class_stage.html#a6e1a9cb7b60e61dee19aca759ef6b48b" title="ãã¹ãã©ã¯ã¿" alt="" coords="5,5,87,32"/>
+<area shape="rect"  title="ãã¡ã¤ã«ãèª­ã¿è¾¼ã" alt="" coords="152,31,304,57"/>
+<area shape="rect"  href="class_sokoban.html#ab0dc8441b4df5a1de184f42425d1dcd4" title="åæåå¦ç" alt="" coords="5,5,104,32"/>
+<area shape="rect"  href="class_stage.html#a49d1ffee4af5dd9d9e0e1dfed874a789" title="ã³ã³ã¹ãã©ã¯ã¿" alt="" coords="5,56,104,83"/>
 </map>
 </div>
 

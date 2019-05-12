@@ -1,10 +1,8 @@
 <map id="C:/PG/make_game/console_sokoban/console_sokoban/src/main.cpp" name="C:/PG/make_game/console_sokoban/console_sokoban/src/main.cpp">
-<area shape="rect" id="node1" title="ファイルマネージャークラスの記述" alt="" coords="63,5,246,61"/>
+<area shape="rect" id="node1" title="メインコード" alt="" coords="110,5,293,61"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,109,77,136"/>
-<area shape="rect" id="node3" href="$file__manager_8h_source.html" title=" " alt="" coords="101,109,208,136"/>
-<area shape="rect" id="node6" href="$stage_8h.html" title="ステージを扱うクラス" alt="" coords="233,109,298,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="95,184,161,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="185,184,239,211"/>
-<area shape="rect" id="node7" href="$cell_8h.html" title="配列を扱うクラス" alt="" coords="264,184,317,211"/>
-<area shape="rect" id="node8" title=" " alt="" coords="263,259,319,285"/>
+<area shape="rect" id="node3" href="$game__lib_8h_source.html" title=" " alt="" coords="101,109,187,136"/>
+<area shape="rect" id="node5" href="$frame__work_8h.html" title="マネージャークラスをまとめる実装を記述&quot;src/frame_work.h&quot;" alt="" coords="211,109,309,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="334,109,429,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="105,184,183,211"/>
 </map>

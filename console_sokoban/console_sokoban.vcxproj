@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="resrc\.gitignore" />
+    <None Include="..\.gitignore" />
     <None Include="resrc\Doxyfile" />
     <None Include="resrc\history.md" />
     <None Include="resrc\license.md" />
@@ -30,23 +30,40 @@
     <ClCompile Include="src\frame_work.cpp" />
     <ClCompile Include="src\key_manager.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\seq\game\clear.cpp" />
+    <ClCompile Include="src\seq\game\loading.cpp" />
+    <ClCompile Include="src\seq\game\menu.cpp" />
+    <ClCompile Include="src\seq\game\parent.cpp" />
+    <ClCompile Include="src\seq\game\play.cpp" />
     <ClCompile Include="src\seq\parent.cpp" />
+    <ClCompile Include="src\seq\select_stage.cpp" />
+    <ClCompile Include="src\seq\title.cpp" />
     <ClCompile Include="src\sokoban.cpp" />
-    <ClCompile Include="src\stage.cpp" />
+    <ClCompile Include="src\state.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\cell.h" />
     <ClInclude Include="src\file_manager.h" />
     <ClInclude Include="src\frame_work.h" />
+    <ClInclude Include="src\game_lib.h" />
     <ClInclude Include="src\key_manager.h" />
+    <ClInclude Include="src\seq\game\clear.h" />
+    <ClInclude Include="src\seq\game\loading.h" />
+    <ClInclude Include="src\seq\game\menu.h" />
+    <ClInclude Include="src\seq\game\parent.h" />
+    <ClInclude Include="src\seq\game\play.h" />
     <ClInclude Include="src\seq\parent.h" />
+    <ClInclude Include="src\seq\select_stage.h" />
+    <ClInclude Include="src\seq\title.h" />
     <ClInclude Include="src\sokoban.h" />
-    <ClInclude Include="src\stage.h" />
+    <ClInclude Include="src\state.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="map\map002.txt" />
+    <Text Include="map\map2.txt" />
+    <Text Include="map\map3.txt" />
     <Text Include="map\maplist.txt" />
-    <Text Include="map\map001.txt" />
+    <Text Include="map\map1.txt" />
+    <Text Include="resrc\uml.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -119,6 +136,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+      <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -147,6 +166,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

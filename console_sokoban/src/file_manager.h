@@ -15,8 +15,8 @@ public:
 	static void Destory(); ///<処理の終わりに呼ぶ
 	static FileManager* GetInstance(); ///<ファイルマネージャークラスにアクセスする唯一の関数
 
-	std::ifstream* ReadFile(std::string file_name);///<ファイルを読み込む
-	void CloseFile(std::ifstream* file_name);///<ReadFIleを読んだ後必ず呼ぶ事
+	const std::string ReadFile(const std::string& file_name);///<ファイルを読み込む
+	const std::string ReadMapFile(const std::string& file_name);///<ファイルを読み込む
 private:
 	static FileManager* instance; ///<唯一のインスタンス
 	///シングルトン

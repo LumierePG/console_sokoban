@@ -1,0 +1,4 @@
+<map id="Stage::SearchMan" name="Stage::SearchMan">
+<area shape="rect" id="node1" title="人判定のデータの位置を探す" alt="" coords="176,5,307,32"/>
+<area shape="rect" id="node2" href="$class_sokoban.html#a56bd39b27518c05afc3dcf7ad05f0e64" title="更新" alt="" coords="5,5,128,32"/>
+</map>

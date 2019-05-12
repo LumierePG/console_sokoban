@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stage',['Stage',['../class_stage.html',1,'']]]
+  ['keymanager',['KeyManager',['../class_key_manager.html',1,'']]]
 ];

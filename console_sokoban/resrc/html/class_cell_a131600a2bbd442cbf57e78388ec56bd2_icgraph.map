@@ -1,4 +1,14 @@
 <map id="Cell::GetHeight" name="Cell::GetHeight">
-<area shape="rect" id="node1" title="縦幅の取得" alt="" coords="147,5,257,32"/>
-<area shape="rect" id="node2" href="$class_stage.html#a9d8a1716891ff3160bd84afe8e22c9a3" title="初期化" alt="" coords="5,5,99,32"/>
+<area shape="rect" id="node1" title="縦幅の取得" alt="" coords="617,132,728,159"/>
+<area shape="rect" id="node2" href="$class_stage.html#a862c0df4e2324851cfc2a487d3303710" title="コピーコンストラクタ" alt="" coords="434,5,533,32"/>
+<area shape="rect" id="node3" href="$class_stage.html#a8441671dba0ebfb2f1809719d20ee251" title="代入演算子" alt="" coords="424,56,543,83"/>
+<area shape="rect" id="node4" href="$class_stage.html#a9d8a1716891ff3160bd84afe8e22c9a3" title="ステージの描画" alt="" coords="437,107,530,133"/>
+<area shape="rect" id="node6" href="$class_stage.html#ad7302d909e75aeb49112c101e793378d" title="人判定のデータの位置を探す" alt="" coords="197,157,328,184"/>
+<area shape="rect" id="node8" href="$class_stage.html#ab9d02e6a96ab668e2d82d2fa597385ab" title="移動先が範囲外かチェックする" alt="" coords="397,208,569,235"/>
+<area shape="rect" id="node10" href="$class_stage.html#a590547fe314aae8acde0a6bb92a1cbe1" title="引数の探したいデータを検索する" alt="" coords="412,284,555,311"/>
+<area shape="rect" id="node5" href="$class_sokoban.html#a169b094e34131482229255f25e11cac4" title="描画" alt="" coords="207,107,318,133"/>
+<area shape="rect" id="node7" href="$class_sokoban.html#a56bd39b27518c05afc3dcf7ad05f0e64" title="更新" alt="" coords="5,208,128,235"/>
+<area shape="rect" id="node9" href="$class_stage.html#a31e599b2fd9c37114e858964cb5c1d0d" title="移動先が移動可能かのチェックする" alt="" coords="176,259,349,285"/>
+<area shape="rect" id="node11" href="$class_stage.html#a1a2ee12c19cb6979087f58cbbb597f46" title="クリアしたかの判定" alt="" coords="215,309,310,336"/>
+<area shape="rect" id="node12" href="$class_sokoban.html#a08a399c4b950cd609b112eb5ffa47090" title="クリアしたかどうかの判定" alt="" coords="11,309,122,336"/>
 </map>

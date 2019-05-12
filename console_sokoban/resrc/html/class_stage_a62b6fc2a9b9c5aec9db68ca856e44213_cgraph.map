@@ -1,0 +1,5 @@
+<map id="Stage::Init" name="Stage::Init">
+<area shape="rect" id="node1" title="初期化" alt="" coords="5,31,87,57"/>
+<area shape="rect" id="node2" href="$class_file_manager.html#a604802b6192958e9f9df590728a210d4" title="ファイルマネージャークラスにアクセスする唯一の関数" alt="" coords="135,5,305,32"/>
+<area shape="rect" id="node3" href="$class_file_manager.html#a87457bf38052503b26a92b74a6c4d7a1" title="ファイルを読み込む" alt="" coords="144,56,296,83"/>
+</map>

@@ -1,2 +1,8 @@
+@map_num
+3
+@map_num_end
+@map_name
 map001.txt
 map002.txt
+map003.txt
+@map_name_end

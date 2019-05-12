@@ -1,0 +1,10 @@
+           main 
+		     |
+		  parent
+
+title  select_stage         game 
+                           parent
+				   play Clear loading Menu        sokoban stage cell
+		   
+		   
+

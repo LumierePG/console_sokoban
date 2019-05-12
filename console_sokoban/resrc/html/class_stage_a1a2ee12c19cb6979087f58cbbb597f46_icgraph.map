@@ -1,0 +1,4 @@
+<map id="Stage::Clear" name="Stage::Clear">
+<area shape="rect" id="node1" title="クリアしたかの判定" alt="" coords="164,5,259,32"/>
+<area shape="rect" id="node2" href="$class_sokoban.html#a08a399c4b950cd609b112eb5ffa47090" title="クリアしたかどうかの判定" alt="" coords="5,5,116,32"/>
+</map>

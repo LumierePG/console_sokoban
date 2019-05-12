@@ -16,6 +16,9 @@
     <Filter Include="src\seq">
       <UniqueIdentifier>{3c5e7f25-8c0b-459c-a616-e39d284ad38c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\seq\game">
+      <UniqueIdentifier>{e3c0e10c-d764-44a3-bf98-42e6c02797d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="resrc\history.md">
@@ -27,11 +30,11 @@
     <None Include="resrc\readme.md">
       <Filter>resrc</Filter>
     </None>
-    <None Include="resrc\.gitignore">
-      <Filter>git</Filter>
-    </None>
     <None Include="resrc\Doxyfile">
       <Filter>resrc</Filter>
+    </None>
+    <None Include="..\.gitignore">
+      <Filter>git</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -39,12 +42,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\file_manager.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\stage.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sokoban.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\key_manager.cpp">
@@ -56,18 +53,36 @@
     <ClCompile Include="src\frame_work.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\seq\title.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seq\select_stage.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seq\game\parent.cpp">
+      <Filter>src\seq\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seq\game\play.cpp">
+      <Filter>src\seq\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seq\game\clear.cpp">
+      <Filter>src\seq\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seq\game\loading.cpp">
+      <Filter>src\seq\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seq\game\menu.cpp">
+      <Filter>src\seq\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sokoban.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\file_manager.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\cell.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\stage.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sokoban.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\key_manager.h">
@@ -79,15 +94,54 @@
     <ClInclude Include="src\frame_work.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\seq\title.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seq\select_stage.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seq\game\parent.h">
+      <Filter>src\seq\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seq\game\play.h">
+      <Filter>src\seq\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seq\game\clear.h">
+      <Filter>src\seq\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seq\game\loading.h">
+      <Filter>src\seq\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seq\game\menu.h">
+      <Filter>src\seq\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cell.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sokoban.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game_lib.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="map\maplist.txt">
       <Filter>map</Filter>
     </Text>
-    <Text Include="map\map002.txt">
+    <Text Include="resrc\uml.txt">
+      <Filter>resrc</Filter>
+    </Text>
+    <Text Include="map\map1.txt">
       <Filter>map</Filter>
     </Text>
-    <Text Include="map\map001.txt">
+    <Text Include="map\map2.txt">
+      <Filter>map</Filter>
+    </Text>
+    <Text Include="map\map3.txt">
       <Filter>map</Filter>
     </Text>
   </ItemGroup>

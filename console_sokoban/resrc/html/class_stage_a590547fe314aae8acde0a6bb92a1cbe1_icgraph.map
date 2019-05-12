@@ -1,0 +1,5 @@
+<map id="Stage::SearchObject" name="Stage::SearchObject">
+<area shape="rect" id="node1" title="引数の探したいデータを検索する" alt="" coords="307,5,449,32"/>
+<area shape="rect" id="node2" href="$class_stage.html#a1a2ee12c19cb6979087f58cbbb597f46" title="クリアしたかの判定" alt="" coords="164,5,259,32"/>
+<area shape="rect" id="node3" href="$class_sokoban.html#a08a399c4b950cd609b112eb5ffa47090" title="クリアしたかどうかの判定" alt="" coords="5,5,116,32"/>
+</map>

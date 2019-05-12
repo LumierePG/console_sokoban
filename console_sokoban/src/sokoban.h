@@ -7,9 +7,10 @@
 */
 #pragma once
 #include <vector>
-class Stage;
+class State;
 class Sokoban {
 public:
+	/*
 	Sokoban(); ///<コンストラクタ
 	~Sokoban(); ///<デストラクタ
 	void Init(); ///<初期化処理
@@ -18,14 +19,16 @@ public:
 	bool Update(); ///<更新
 	void Draw(); ///<描画
 	bool Clear(); ///<クリアしたかどうかの判定
-	
+	*/
 private:
-	Stage* stage_; ///<使用するステージデータ
-	Stage* stage_list_; ///読み込んだステージデータ群置き場
+	/*
+	State* stage_; ///<使用するステージデータ
+	State* stage_list_; ///読み込んだステージデータ群置き場
 	std::vector<std::string> map_name_list; ///<ステージ選択の時にmapを選べるようにする
 
 	bool MovablePushKey(char key, int* x_pos, int* y_pos); ///<移動したか判定
 	void SelectStage(int select_stage); ///ステージを変更する
+	*/
 };
 
 //vectorにオブジェクトを持たせてはいけない

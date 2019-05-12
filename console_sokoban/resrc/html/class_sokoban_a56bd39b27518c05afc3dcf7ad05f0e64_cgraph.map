@@ -1,0 +1,11 @@
+<map id="Sokoban::Update" name="Sokoban::Update">
+<area shape="rect" id="node1" title="更新" alt="" coords="5,132,128,159"/>
+<area shape="rect" id="node2" href="$class_key_manager.html#a0c55a2d11d22d89edd5366b77031bf00" title="キーインスタンス呼び出し" alt="" coords="176,5,349,32"/>
+<area shape="rect" id="node3" href="$class_key_manager.html#a920ef9bcd96e0050d6469bf1a345b54e" title="キー入力の取得" alt="" coords="189,56,336,83"/>
+<area shape="rect" id="node4" href="$class_stage.html#ad7302d909e75aeb49112c101e793378d" title="人判定のデータの位置を探す" alt="" coords="418,107,549,133"/>
+<area shape="rect" id="node7" href="$class_stage.html#ab9d02e6a96ab668e2d82d2fa597385ab" title="移動先が範囲外かチェックする" alt="" coords="397,157,569,184"/>
+<area shape="rect" id="node8" href="$class_stage.html#a31e599b2fd9c37114e858964cb5c1d0d" title="移動先が移動可能かのチェックする" alt="" coords="176,208,349,235"/>
+<area shape="rect" id="node9" href="$class_stage.html#a1ebf84b9e6b068b5a9ea5ea6fc35a884" title="引数によって更新パターンを変える" alt="" coords="197,259,329,285"/>
+<area shape="rect" id="node5" href="$class_cell.html#a5ada8ec3785d23bee50844e2b395d81a" title="横幅の取得" alt="" coords="619,107,726,133"/>
+<area shape="rect" id="node6" href="$class_cell.html#a131600a2bbd442cbf57e78388ec56bd2" title="縦幅の取得" alt="" coords="617,157,728,184"/>
+</map>

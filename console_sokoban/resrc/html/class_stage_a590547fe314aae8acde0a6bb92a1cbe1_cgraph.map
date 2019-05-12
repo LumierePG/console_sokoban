@@ -1,0 +1,5 @@
+<map id="Stage::SearchObject" name="Stage::SearchObject">
+<area shape="rect" id="node1" title="引数の探したいデータを検索する" alt="" coords="5,31,148,57"/>
+<area shape="rect" id="node2" href="$class_cell.html#a5ada8ec3785d23bee50844e2b395d81a" title="横幅の取得" alt="" coords="198,5,305,32"/>
+<area shape="rect" id="node3" href="$class_cell.html#a131600a2bbd442cbf57e78388ec56bd2" title="縦幅の取得" alt="" coords="196,56,307,83"/>
+</map>

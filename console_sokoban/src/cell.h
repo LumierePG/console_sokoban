@@ -1,3 +1,5 @@
+#ifndef INCLUDED_CELL_H
+#define INCLUDED_CELL_H
 /**
 * @file cell.h
 * セルクラスの記述 "src/cell.h"
@@ -6,8 +8,9 @@
 * @author YouTE
 * @date 2019/05/03
 */
-#pragma once
+
 #include <vector>
+#include "game_lib.h"
 template <typename T>class Cell{
 public:
 	/**
@@ -29,70 +32,28 @@ public:
 		array_.resize(width_ * height_);
 	}
 	/**
-	* array_を引数のx_pos,y_posの位置を使って更新する
-	* @param [in] x_pos 横の位置
-	* @param [in] y_pos 縦の位置
-	* @param [in] data 更新するデータ
-	* @retval true 有効なインデックスを指定
-	* @retval false 無効なインデックスを指定
+	* 新しく横幅と縦幅と array_配列のリサイズ
+	* @param [in] arg_width
+	* @param [in] arg_height
 	*/
-	bool Add(int x_pos, int y_pos, T data) {
-		if (0 <= (x_pos + y_pos * width_) &&
-			(x_pos + y_pos * width_) < static_cast<int>(array_.size())) {
-			array_.at(x_pos + y_pos * width_) = data;
-			return true;
-		}
-		return false;
-	}
-	/**
-	* array_を引数のposの位置を使って更新する
-	* @param [in] pos 更新したいインデックス
-	* @param [in] data 更新するデータ
-	* @retval true 有効なインデックスを指定
-	* @retval false 無効なインデックスを指定
-	*/
-	bool Add(int pos, T data) {
-		if (0 <= (pos) &&
-			pos < static_cast<int>(array_.size())) {
-			array_.at(pos) = data;
-			return true;
-		}
-		return false;
+	void SetSize(int arg_width, int arg_height) {
+		width_ = arg_width;
+		height_ = arg_height;
+		array_.resize(width_ * height_);
 	}
 	/**
 	* 横幅の取得
 	* @return width_ 横幅
 	*/
-	int GetWidth() {
+	int GetWidth() const{
 		return width_;
 	}
 	/**
 	* 縦幅の取得
 	* @return height_ 縦幅
 	*/
-	int GetHeight() {
+	int GetHeight() const{
 		return height_;
-	}
-	/**
-	* 横幅の設定
-	* @param [in] arg_width メンバのwidth_を更新
-	*/
-	void SetWidth(int arg_width) {
-		width_ = arg_width;
-	}
-	/**
-	* 縦幅の設定
-	* @param [in] arg_height メンバのheight_を更新
-	*/
-	void SetHeight(int arg_height) {
-		height_ = arg_height;
-	}
-	/**
-	* データのメンバのリサイズ
-	* @param [in] size リサイズの大きさ
-	*/
-	void ArrayReSize(int size){
-		array_.resize(size);
 	}
 	/**
 	* 扱いやすいように演算子のオーバーロードを作成
@@ -103,6 +64,10 @@ public:
 	* @return 変更不可能なデータを返す
 	*/
 	const T& operator()(int x_pos, int y_pos) const{
+		if (0 > (x_pos + y_pos * width_) ||
+			static_cast<int>(array_.size()) <= (x_pos + y_pos * width_)) {
+			throw("範囲外にアクセス");
+		}
 		return array_.at(x_pos + y_pos * width_);
 	}
 	/**
@@ -113,7 +78,26 @@ public:
 	* @return 変更可能なデータを返す
 	*/
 	T& operator()(int x_pos, int y_pos) {
+		if (0 > (x_pos + y_pos * width_) ||
+			static_cast<int>(array_.size()) <= (x_pos + y_pos * width_)) {
+			throw("範囲外にアクセス");
+		}
 		return array_.at(x_pos + y_pos * width_);
+	}
+
+	const T& operator()(int pos)const {
+		if (0 > pos ||
+			static_cast<int>(array_.size()) <= pos) {
+			throw("範囲外にアクセス");
+		}
+		return array_.at(pos);
+	}
+	T& operator()(int pos){
+		if (0 > pos ||
+			static_cast<int>(array_.size()) <= pos) {
+			throw("範囲外にアクセス");
+		}
+		return array_.at(pos);
 	}
 
 private:
@@ -121,3 +105,4 @@ private:
 	int width_; ///<横幅
 	int height_; ///<縦幅
 };
+#endif //INCLUDED_CELL_H

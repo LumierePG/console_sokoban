@@ -1,0 +1,4 @@
+<map id="Stage::Init" name="Stage::Init">
+<area shape="rect" id="node1" title="初期化" alt="" coords="152,5,233,32"/>
+<area shape="rect" id="node2" href="$class_sokoban.html#ab0dc8441b4df5a1de184f42425d1dcd4" title="初期化処理" alt="" coords="5,5,104,32"/>
+</map>

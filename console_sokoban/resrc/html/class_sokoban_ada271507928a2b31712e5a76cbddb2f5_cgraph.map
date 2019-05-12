@@ -1,0 +1,6 @@
+<map id="Sokoban::Init" name="Sokoban::Init">
+<area shape="rect" id="node1" title="初期化の処理 ステージ選択" alt="" coords="5,56,104,83"/>
+<area shape="rect" id="node2" href="$class_file_manager.html#a604802b6192958e9f9df590728a210d4" title="ファイルマネージャークラスにアクセスする唯一の関数" alt="" coords="152,5,323,32"/>
+<area shape="rect" id="node3" href="$class_file_manager.html#a87457bf38052503b26a92b74a6c4d7a1" title="ファイルを読み込む" alt="" coords="161,56,313,83"/>
+<area shape="rect" id="node4" href="$class_file_manager.html#a0abf3d546f923ebeb2f5677e3c8b8afc" title="ReadFIleを読んだ後必ず呼ぶ事" alt="" coords="160,107,315,133"/>
+</map>

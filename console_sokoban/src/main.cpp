@@ -5,18 +5,24 @@
 * @date 2019/05/02
 */
 #include <iostream>
+#include "game_lib.h"
 #include "frame_work.h"
-#include "sokoban.h"
+#include "seq/parent.h"
 int main() {
 
-	FrameWork::Create();
-	Sokoban sokoban;
-	sokoban.Init();
-	sokoban.Draw();
-	while (!sokoban.Clear()) {
-		sokoban.Update();
-		sokoban.Draw();
+	try{
+		FrameWork::Create();
+
+		sequence::Parent parent;
+		while (1) {
+			
+			parent.Update();
+		}
+		FrameWork::Destory();
 	}
-	FrameWork::Destory();
+	catch (const std::exception& ex) {
+		ex.what();
+	}
+	
 	return 0;
 }

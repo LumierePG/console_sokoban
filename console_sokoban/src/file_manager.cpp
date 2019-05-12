@@ -1,4 +1,7 @@
 #include "file_manager.h"
+#include "game_lib.h"
+#include <sstream>
+#include <fstream>
 //唯一のインスタンス
 FileManager* FileManager::instance = nullptr;
 /**
@@ -25,22 +28,43 @@ FileManager* FileManager::GetInstance() {
 }
 /**
 * ファイル読み込み
-* @details newした後は呼んだ先で処理する
+* @details 一行ずつ読み込んで読み込み終わったらデータを投げる
 * @param [in] file_name ファイル名
-* @return newしたファイルポインタを返す
+* @return 読み込んだデータをstringで返す
 */
-std::ifstream* FileManager::ReadFile(std::string file_name) {
-	std::ifstream* fin = new std::ifstream;
-	fin->open(file_name);
-	return fin;
+const std::string FileManager::ReadFile(const std::string& file_directory) {
+
+	std::ifstream fin(file_directory);
+	
+	if (!fin) {
+		throw("ファイルが読み込めない。");
+	}
+	std::stringstream stio;
+	std::string ss;
+	while (std::getline(fin,ss)) {
+		stio << ss;
+		ss.erase();
+	}
+	return stio.str();
 }
 /**
-* 読み込んで作業をしたら必ず呼ぶ
-* @param [out] *fin 解放するnewされたファイルポインタ
-* @details newしたデータを削除するため、ReadFileを読んだ後、処理が終わったら必ず呼ぶ。
+* ファイル読み込み
+* @details 一行ずつ読み込んで読み込み終わったらデータを投げる
+* @param [in] file_name ファイル名
+* @return 読み込んだデータをstringで返す
 */
-void FileManager::CloseFile(std::ifstream* fin) {
-	fin->close();
-	delete fin;
-	fin = nullptr;
+const std::string FileManager::ReadMapFile(const std::string& file_directory) {
+
+	std::ifstream fin(file_directory);
+
+	if (!fin) {
+		throw("ファイルが読み込めない。");
+	}
+	std::stringstream stio;
+	std::string ss;
+	while (std::getline(fin, ss)) {
+		stio << ss << '\n';
+		ss.erase();
+	}
+	return stio.str();
 }

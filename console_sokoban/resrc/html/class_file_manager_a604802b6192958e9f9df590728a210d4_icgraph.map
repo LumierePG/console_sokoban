@@ -1,4 +1,5 @@
 <map id="FileManager::GetInstance" name="FileManager::GetInstance">
-<area shape="rect" id="node1" title="処理の終わりに呼ぶ" alt="" coords="135,5,305,32"/>
-<area shape="rect" id="node2" href="$class_stage.html#a6e1a9cb7b60e61dee19aca759ef6b48b" title="デストラクタ" alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node1" title="ファイルマネージャークラスにアクセスする唯一の関数" alt="" coords="152,31,323,57"/>
+<area shape="rect" id="node2" href="$class_sokoban.html#ab0dc8441b4df5a1de184f42425d1dcd4" title="初期化処理" alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node3" href="$class_stage.html#a49d1ffee4af5dd9d9e0e1dfed874a789" title="コンストラクタ" alt="" coords="5,56,104,83"/>
 </map>
